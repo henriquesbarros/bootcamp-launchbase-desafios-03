@@ -1,0 +1,136 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
+:root {
+    --color-gostack: #50fa7b;
+    --color-rocket: #7159c1;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121214;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--color-rocket);
+    transition: 200ms;
+}
+
+/*===  ABOUT ===*/
+
+#wrapper img {
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--color-rocket);
+}
+
+#wrapper h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 30px;
+}
+
+#wrapper p strong {
+    color: var(--color-gostack);
+    font-size: 46px;
+}
+
+#wrapper p {
+    margin-top: 15px;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.links-footer {
+    margin-top: 60px;
+}
+
+.links-footer a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid var(--color-rocket);
+    margin-right: 20px;
+}
+
+.links-footer a:hover {
+    color: var(--color-rocket);
+    transition: 200ms;
+}
+
+/*=== CONTENT ===*/
+
+.cards {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 32px auto;
+}
+
+.card {
+    width: 380px;
+    background-color: var(--color-rocket);
+    border-radius: 26px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 26px 26px 0 0;
+}
+
+.card__content,
+.card__info {
+    padding: 12px;
+    text-align: left;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+/*=== PAGE NOT FOUND ===*/
+
+.not-found-h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.not-found-h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.not-found-p {
+    font-size: 20px;
+    opacity: 0.7;
+}

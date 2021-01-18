@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Conteúdos - Rocketseat</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <section class="cards">
+
+        <div class="card" id="mapas-com-react-usando-leaflet">
+            <div class="card__image">
+                <img src="https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h2>Mapas com React usando Leaflet</h2>
+            </div>
+            <div class="card__info">
+                <span>por <strong>Thiago Marinho</strong></span>
+                <span>11 MIN DE LEITURA</span>
+            </div>
+        </div>
+
+        <div class="card" id="paginacao-react-router">
+            <div class="card__image">
+                <img src="https://blog.rocketseat.com.br/content/images/2019/03/Paginac-a-o-com-React-Router-Dom.png" alt="">
+            </div>
+            <div class="card__content">
+                <h2>Paginação com React Router Dom</h2>
+            </div>
+            <div class="card__info">
+                <span>por <strong>Higo Ribeiro</strong></span>
+                <span>2 MIN DE LEITURA</span>
+            </div>
+        </div>
+
+        <div class="card" id="5-ferramentas-em-alta-react">
+            <div class="card__image">
+                <img src="https://blog.rocketseat.com.br/content/images/2019/03/5_ferramentas_em_alta_para_desenvolvedores_React.png" alt="">
+            </div>
+            <div class="card__content">
+                <h2>5 ferramentas em alta para desenvolvedores React</h2>
+            </div>
+            <div class="card__info">
+                <span>por <strong>Diego Fernandes</strong></span>
+                <span>5 MIN DE LEITURA</span>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <a class="maximize-modal">
+                <i class="material-icons">maximize</i>
+            </a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+{% endblock %}
